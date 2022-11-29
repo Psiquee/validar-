@@ -1,0 +1,111 @@
+/*JOYAS INICIO*/
+
+.cards-banner-two .content-2 {
+    font-family: 'Century Gothic Bold';
+    flex-direction: column;
+    text-align: center;  
+    font-size: 25px;
+    margin-bottom: 0;
+    color: #000000; 
+    padding-top: 50px;
+   position: relative;
+    
+}
+
+
+.cards-banner-two{
+    width: 100%;
+    height: 160px;
+    /*background: url(img/banner.png ) center center/cover;
+    background-color: rgba(0,0,0,.2);*/
+    margin-bottom: 40px;
+    
+    
+    
+}
+
+.cards-banner-two::before{
+   
+    content: '';
+    position: absolute;
+    top:auto;
+    width: 90%;
+    height: 160px;
+    background: url(../../public/img/banner33.jpg) no-repeat center center/cover;
+    opacity: 0.4;
+   
+   
+
+}
+.cards-banner-two h2{
+    
+    line-height: 1.2;
+    
+}
+footer{
+    background-color: #ccc; /*#cccccc*/
+    clear: both;
+    color: #333;
+    text-align: center;
+    padding: 5px 0; /*3rem 0*/
+    margin-top: 20px;
+    
+}
+footer{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items:center ;
+
+background-color: black;
+}
+.logo-footer{
+    margin-right: 50px;
+    margin-bottom: 50px;
+    width: 100px; 
+    margin-top: 30px;}
+
+
+  
+
+/*JOYAS FIN*/
+
+/*AJUSTE DE PANTALLA*/
+@media (max-width: 700px) {
+    .menu-btn {
+        display: block;
+    }
+    
+    .nav-main ul.nav-menu {
+        display: block;
+        position: absolute;
+        top: 0 ;
+        left: 0;
+        background: #ffffff;
+        height: 100%;
+        padding: 30px;
+        opacity: .9;
+        transform: translateX(-400px);
+        transition: transform .5s ease-in-out;
+        }
+        .nav-main ul.nav-menu.show {
+            transform: translateX(-20px);
+        }
+
+        .nav-main ul.nav-menu li {
+            padding: 20px;
+            font-size: 14px;
+        }
+        .nav-main ul.nav-lupa {
+            margin: 40px;
+        }
+        footer{
+            display: block;
+            text-align: center;
+        }
+        footer .logo-footer{
+        text-align: center;
+        margin-right: auto;
+        margin-top: 50px;
+        width: 150px;
+        } }
